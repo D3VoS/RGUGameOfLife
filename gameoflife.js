@@ -53,7 +53,7 @@ function update_grid(a){
     // oops
   liveNeighbours -= a[j][i];
 
-      //console.log("Index (" + i + ", " + j + ") is " + a[j][i] + " has " + liveNeighbours + " neighbours")
+      console.log("Index (" + i + ", " + j + ") is " + a[j][i] + " has " + liveNeighbours + " neighbours")
 
   // rules for next generation...
   newa[j][i] = a[j][i]
