@@ -30,9 +30,22 @@ class Board:
                 print(i)
     
     def UpdateBoard(self):
-        for i in self.board:
-            
+        newBoard = []
+        liveNeighbours = 0
 
+        for i in range(len(self.height)):
+            newBoard[i] = []
+            for j in range(len(self.width)):
+                starx = -1
+                starty = -1
+                endx = 2
+                endy = 2
+                if i==0: starty = 0
+                if j == 0: startx = 0
+                if i==(len(self.height) - 1): endy = 1
+                if j==(len(self.height) - 1): endx = 1
+                liveNeighbours = 0
+                
 
 
 
